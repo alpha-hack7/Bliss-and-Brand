@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav>
       <div>
-        <img src={Logo} alt="logo" width={30} height={40} />
+        <img src={Logo} alt="logo" height={40} width={70} />
       </div>
       <div className="lap-nav">
         <ul className={open ? "open" : "closed"}>
