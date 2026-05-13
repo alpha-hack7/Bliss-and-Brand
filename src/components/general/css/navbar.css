@@ -1,7 +1,7 @@
 nav {
   height: 50px;
   width: 100vw;
-  background-color: #000;
+  background-color: #fff;
   position: fixed;
   top: 0;
   right: 0;
@@ -24,8 +24,11 @@ nav div ul {
 .menu-button {
   padding: 6px 12px;
   position: fixed;
-  top: 0;
+  top: 10px;
   right: 10px;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
 }
 .open {
   position: fixed;

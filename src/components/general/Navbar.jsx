@@ -33,7 +33,11 @@ const Navbar = () => {
         </ul>
       </div>
       <button className="menu-button" onClick={openSidebar}>
-        {open ? <FiX size={20} /> : <FiMenu size={20} />}
+        {open ? (
+          <FiX size={20} color="black" />
+        ) : (
+          <FiMenu size={20} color="black" />
+        )}
       </button>
     </nav>
   );
