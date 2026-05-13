@@ -1,0 +1,14 @@
+.all-categories {
+  display: flex;
+  gap: 10px;
+}
+.categories-container {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.category {
+  border-radius: 10px;
+}
+.cat-image img {
+  border-radius: 10px;
+}

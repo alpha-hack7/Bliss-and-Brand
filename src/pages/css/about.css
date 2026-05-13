@@ -1,0 +1,17 @@
+.about h1 {
+  text-align: center;
+}
+.missions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+.missions-container div {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+section {
+  margin-block: 20px;
+}
