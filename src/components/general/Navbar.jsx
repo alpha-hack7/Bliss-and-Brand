@@ -1,5 +1,6 @@
 import { NavLink } from "react-router";
 import { useState } from "react";
+import Logo from "../../assets/general/logo.png";
 import { FiMenu, FiX } from "react-icons/fi";
 import "./css/navbar.css";
 
@@ -10,7 +11,9 @@ const Navbar = () => {
   };
   return (
     <nav>
-      <div>logo</div>
+      <div>
+        <img src={Logo} alt="logo" width={30} height={40} />
+      </div>
       <div className="lap-nav">
         <ul className={open ? "open" : "closed"}>
           <li>
