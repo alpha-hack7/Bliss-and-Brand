@@ -9,7 +9,7 @@ import Contact from "./pages/contact";
 import NotFound from "./pages/notFound";
 import Login from "./pages/login";
 import Signup from "./pages/signup";
-import RequestQuote from "./pages/request-a-quote";
+import RequestQuote from "./pages/requestQuote";
 
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router-dom";

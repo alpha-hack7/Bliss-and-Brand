@@ -17,6 +17,7 @@
 }
 .contact-form div textarea {
   border-radius: 10px;
+  padding: 10px;
 }
 .contact-form button {
   width: 80px;

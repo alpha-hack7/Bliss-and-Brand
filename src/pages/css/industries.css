@@ -1,0 +1,14 @@
+.sector-info {
+  display: flex;
+  gap: 20px;
+}
+.sector-image {
+  background-color: #fff;
+  border-radius: 10px;
+}
+.sectors {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

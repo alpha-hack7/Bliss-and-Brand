@@ -40,7 +40,7 @@ const About = () => {
           experience smooth, dependable procurement.
         </p>
       </section>
-      <section>
+      <section className="what-our-company-offers">
         <h2>What Our Company Offers</h2>
         <p>
           We simplify procurement so businesses can focus on growth instead of

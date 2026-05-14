@@ -1,0 +1,11 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.not-found h1 {
+  text-align: left;
+}
+.not-found button {
+  width: fit-content;
+}

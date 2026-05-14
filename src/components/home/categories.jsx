@@ -49,18 +49,19 @@ const Category = ({ imgSrc, title }) => {
       <div className="cat-image">
         <img src={imgSrc} alt={title} width={200} height={150} />
       </div>
+      <p>{title}</p>
     </div>
   );
 };
 const Categories = () => {
   return (
-    <>
+    <div className="categories">
       <h2>Categories</h2>
-      <div className="categories-container">
+      <div>
         <AllCategories />
       </div>
       <div className="right-arrow"></div>
-    </>
+    </div>
   );
 };
 

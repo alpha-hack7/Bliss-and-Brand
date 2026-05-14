@@ -1,9 +1,17 @@
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import { useState } from "react";
 import Logo from "../../assets/general/logo.png";
-import { FiMenu, FiX } from "react-icons/fi";
+import { FiMenu, FiX, FiArrowLeftCircle } from "react-icons/fi";
 import "./css/navbar.css";
 
+export const BackArrow = () => {
+  const navigate = useNavigate();
+  return (
+    <button className="back-arrow" onClick={() => navigate("/")}>
+      <FiArrowLeftCircle size={25} />
+    </button>
+  );
+};
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const openSidebar = () => {
@@ -29,6 +37,12 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink to="/contact">Contact Us</NavLink>
+          </li>
+          <li>
+            <NavLink to="/login">Login</NavLink>
+          </li>
+          <li>
+            <NavLink to="/signup">Sign Up</NavLink>
           </li>
         </ul>
       </div>

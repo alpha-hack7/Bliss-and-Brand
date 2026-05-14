@@ -32,14 +32,14 @@ const HowItWorks = () => {
     },
   ];
   return (
-    <>
+    <div className="how">
       <h2>How it Works</h2>
       <div className="steps">
         {steps.map((step) => (
           <Step key={step.id} {...step} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

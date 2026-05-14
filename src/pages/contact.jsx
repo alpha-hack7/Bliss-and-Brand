@@ -9,7 +9,7 @@ const Contact = () => {
       <p>For any enquiries, clarification or opportunity to partner,</p>
       <p>reach out to us via:</p>
       <p>
-        Tel: <i>+2547 1234 5678</i>
+        Tel: <i>+2547 2413 0580</i>
       </p>
       <p>
         Email: <i>blissandbrand@gmail.com</i>

@@ -18,6 +18,9 @@ nav div ul {
   gap: 30px;
   /* background-color: rebeccapurple; */
 }
+nav a:visited {
+  color: black;
+}
 
 /***** HAMBURGER MENU *****/
 
@@ -30,18 +33,33 @@ nav div ul {
   outline: 0;
   border: 0;
 }
-.open {
+.lap-nav {
   position: fixed;
   top: 50px;
-  right: 0;
+  right: 10px;
+  /* transition: right 0.5s ease-in; */
+  height: 100vh;
+  background-color: rgba(147, 195, 228, 0.3);
+  backdrop-filter: blur(10px);
+}
+.open {
+  width: 200px;
   display: flex;
   gap: 10px;
   flex-direction: column;
   /* height: 100vh; */
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 10px;
   padding: 20px;
 }
 .closed {
   display: none;
+}
+
+/***** ARROWS *****/
+
+.back-arrow {
+  background-color: transparent;
+  outline: 0;
+  border: 0;
 }

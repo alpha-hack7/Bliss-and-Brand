@@ -1,0 +1,42 @@
+.request-quote {
+  width: 350px;
+  min-width: 200px;
+  margin: 0 auto;
+}
+.urgency {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.request-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.request-info input {
+  font-size: 16px;
+  padding: 5px 10px;
+}
+.request-info textarea {
+  min-height: 100px;
+  padding: 10px;
+}
+/* .request-info input:type[file] {
+  background-color: #fff;
+} */
+.request-quote label {
+  display: flex;
+  gap: 10px;
+}
+.budget-range div {
+  display: flex;
+  gap: 10px;
+}
+.budget-range div input {
+  width: 80px;
+  padding: 2px 5px;
+}
+.request-quote .buttons {
+  justify-content: flex-start;
+  gap: 20px;
+}

@@ -1,0 +1,27 @@
+.login {
+  width: 70%;
+  margin: 0 auto;
+  /* background-color: blueviolet; */
+  padding: 10px 20px;
+}
+.login-form .buttons {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.login-info input {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+.login-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login p {
+  display: inline-block;
+}
+.forgot-password {
+  margin-top: 10px;
+  float: right;
+}
