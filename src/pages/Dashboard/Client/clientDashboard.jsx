@@ -6,7 +6,11 @@ import { Outlet } from "react-router";
 const ClientDashboard = () => {
   return (
     <>
-      <D_Navbar number={12} />
+      <D_Navbar
+        number={12}
+        notification_link="/dashboard/client/notifications"
+        profile_link="/dashboard/client/profile"
+      />
       <div className="client-dashboard">
         <Sidebar />
         <Outlet />

@@ -13,15 +13,19 @@ export const BackArrow = () => {
   );
 };
 
-export const D_Navbar = ({ number }) => {
+export const D_Navbar = ({ number, notification_link, profile_link }) => {
+  const navigate = useNavigate();
   const num_notifications = number;
   return (
     <div className="dash-nav">
-      <div className="notifications">
+      <div
+        className="notifications"
+        onClick={() => navigate(notification_link)}
+      >
         <FiBell color="white" size={30} />
         <div className="num">{num_notifications}</div>
       </div>
-      <div className="profile">
+      <div className="profile" onClick={() => navigate(profile_link)}>
         <FiUser color="white" size={30} />
       </div>
     </div>

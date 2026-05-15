@@ -24,6 +24,8 @@ import C_Dashboard from "./pages/Dashboard/Client/C_Dashboard";
 
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router-dom";
+import Notifications from "./pages/Dashboard/Client/Notifications";
+import Profile from "./pages/Dashboard/Client/Profile";
 
 const router = createBrowserRouter([
   {
@@ -77,6 +79,14 @@ const router = createBrowserRouter([
       {
         path: "settings",
         element: <Settings />,
+      },
+      {
+        path: "notifications",
+        element: <Notifications />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
       },
     ],
   },

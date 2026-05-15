@@ -12,7 +12,7 @@ import {
 } from "react-icons/fi";
 
 export const Sidebar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const fullNav = (
     <div className="menu">
