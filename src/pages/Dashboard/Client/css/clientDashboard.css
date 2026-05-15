@@ -78,13 +78,27 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 .menu div {
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  position: relative;
+}
+.tag {
+  position: absolute;
+  bottom: -15px;
+  left: 10px;
+  background-color: #fff;
+  color: #111;
+  border-radius: 5px;
+  padding-inline: 2px;
+  display: none;
+}
+.menu div:hover .tag {
+  display: inline;
 }
 .minimize-sidebar {
   width: 100%;

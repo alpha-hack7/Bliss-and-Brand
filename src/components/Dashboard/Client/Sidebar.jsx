@@ -14,55 +14,63 @@ import {
 export const Sidebar = () => {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
+  const sidebarItems = [
+    {
+      id: 1,
+      title: "Dashboard",
+      link: "/dashboard/client",
+      icon: <FiGrid />,
+    },
+    {
+      id: 2,
+      title: "Quotations",
+      link: "/dashboard/client/quotations",
+      icon: <FiFileText />,
+    },
+    {
+      id: 3,
+      title: "Invoices",
+      link: "/dashboard/client/invoices",
+      icon: <FiCreditCard />,
+    },
+    {
+      id: 4,
+      title: "Orders",
+      link: "/dashboard/client/orders",
+      icon: <FiShoppingBag />,
+    },
+    {
+      id: 5,
+      title: "Settings",
+      link: "/dashboard/client/settings",
+      icon: <FiSettings />,
+    },
+    {
+      id: 6,
+      title: "Logout",
+      link: "/",
+      icon: <FiLogOut />,
+    },
+  ];
   const fullNav = (
     <div className="menu">
-      <div onClick={() => navigate("/dashboard/client")}>
-        <FiGrid title="Dashboard" />
-        <span>Dashboard</span>
-      </div>
-      <div onClick={() => navigate("/dashboard/client/quotations")}>
-        <FiFileText title="Quotations" />
-        <span>Quotations</span>
-      </div>
-      <div onClick={() => navigate("/dashboard/client/invoices")}>
-        <FiCreditCard title="Invoices" />
-        <span>Invoices</span>
-      </div>
-      <div onClick={() => navigate("/dashboard/client/orders")}>
-        <FiShoppingBag title="Orders" />
-        <span>Orders</span>
-      </div>
-      <div onClick={() => navigate("/dashboard/client/settings")}>
-        <FiSettings title="Settings" />
-        <span>Settings</span>
-      </div>
-      <div onClick={() => navigate("/")}>
-        <FiLogOut title="Logout" />
-        <span>Logout</span>
-      </div>
+      {sidebarItems.map((sidebarItem) => (
+        <div onClick={() => navigate(sidebarItem.link)}>
+          <Fragment>{sidebarItem.icon}</Fragment>
+          <span>{sidebarItem.title}</span>
+        </div>
+      ))}
     </div>
   );
 
   const iconsNav = (
     <div className="menu">
-      <div onClick={() => navigate("/dashboard/client")}>
-        <FiGrid title="Dashboard" />
-      </div>
-      <div onClick={() => navigate("/dashboard/client/quotations")}>
-        <FiFileText title="Quotations" />
-      </div>
-      <div onClick={() => navigate("/dashboard/client/invoices")}>
-        <FiCreditCard title="Invoices" />
-      </div>
-      <div onClick={() => navigate("/dashboard/client/orders")}>
-        <FiShoppingBag title="Orders" />
-      </div>
-      <div onClick={() => navigate("/dashboard/client/settings")}>
-        <FiSettings title="Settings" />
-      </div>
-      <div onClick={() => navigate("/")}>
-        <FiLogOut title="Logout" />
-      </div>
+      {sidebarItems.map((sidebarItem) => (
+        <div onClick={() => navigate(sidebarItem.link)}>
+          <Fragment>{sidebarItem.icon}</Fragment>
+          <span className="tag">{sidebarItem.title}</span>
+        </div>
+      ))}
     </div>
   );
 
