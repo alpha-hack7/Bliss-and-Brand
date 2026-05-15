@@ -1,8 +1,11 @@
-.login {
-  width: 70%;
+.login-form {
+  width: 80%;
   margin: 0 auto;
   /* background-color: blueviolet; */
   padding: 10px 20px;
+}
+.login h1 {
+  text-align: center;
 }
 .login-form .buttons {
   margin-top: 50px;

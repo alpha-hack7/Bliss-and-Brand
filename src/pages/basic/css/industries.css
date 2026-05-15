@@ -2,9 +2,13 @@
   display: flex;
   gap: 20px;
 }
+.sector-image img,
 .sector-image {
   background-color: #fff;
   border-radius: 10px;
+}
+.sector-image img {
+  width: 100%;
 }
 .sectors {
   padding-top: 20px;

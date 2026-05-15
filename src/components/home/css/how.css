@@ -3,7 +3,7 @@
 }
 .steps {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
 }
@@ -26,4 +26,10 @@
 .step h3,
 .step p {
   text-align: left;
+}
+
+@media (width > 800px) {
+  .step {
+    width: 250px;
+  }
 }

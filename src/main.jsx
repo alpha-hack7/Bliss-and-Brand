@@ -2,14 +2,25 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 // import Navbar from "./components/general/Navbar";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Industries from "./pages/industries";
-import Contact from "./pages/contact";
-import NotFound from "./pages/notFound";
-import Login from "./pages/login";
-import Signup from "./pages/signup";
-import RequestQuote from "./pages/requestQuote";
+import Home from "./pages/basic/home";
+import About from "./pages/basic/about";
+import Industries from "./pages/basic/industries";
+import Contact from "./pages/basic/contact";
+import NotFound from "./pages/basic/notFound";
+
+import Login from "./pages/basic/login";
+import Signup from "./pages/basic/signup";
+
+import RequestQuote from "./pages/basic/requestQuote";
+
+import ClientDashboard from "./pages/Dashboard/Client/clientDashboard";
+import SupplierDashboard from "./pages/Dashboard/Supplier/supplierDashboard";
+
+import Quotations from "./pages/Dashboard/Client/Quotations";
+import Orders from "./pages/Dashboard/Client/Orders";
+import Invoices from "./pages/Dashboard/Client/Invoices";
+import Settings from "./pages/Dashboard/Client/Settings";
+import C_Dashboard from "./pages/Dashboard/Client/C_Dashboard";
 
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router-dom";
@@ -42,6 +53,36 @@ const router = createBrowserRouter([
   {
     path: "/request-quote",
     element: <RequestQuote />,
+  },
+  {
+    path: "/dashboard/client",
+    element: <ClientDashboard />,
+    children: [
+      {
+        index: true,
+        element: <C_Dashboard />,
+      },
+      {
+        path: "quotations",
+        element: <Quotations />,
+      },
+      {
+        path: "invoices",
+        element: <Invoices />,
+      },
+      {
+        path: "orders",
+        element: <Orders />,
+      },
+      {
+        path: "settings",
+        element: <Settings />,
+      },
+    ],
+  },
+  {
+    path: "/dashboard/supplier",
+    element: <SupplierDashboard />,
   },
   {
     path: "*",

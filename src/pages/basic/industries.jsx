@@ -1,10 +1,10 @@
-import Navbar from "../components/general/Navbar";
+import Navbar from "../../components/general/Navbar";
 import "./css/industries.css";
-import HomeImage from "../assets/home/categories/Home.png";
-import FashionImage from "../assets/home/categories/Fashion.png";
-import BeautyImage from "../assets/home/categories/Beauty.png";
-import ElectronicsImage from "../assets/home/categories/Electronics.png";
-import SportsImage from "../assets/home/categories/Sports.png";
+import HomeImage from "../../assets/home/categories/Home.png";
+import FashionImage from "../../assets/home/categories/Fashion.png";
+import BeautyImage from "../../assets/home/categories/Beauty.png";
+import ElectronicsImage from "../../assets/home/categories/Electronics.png";
+import SportsImage from "../../assets/home/categories/Sports.png";
 
 const Sectors = () => {
   const sectors = [

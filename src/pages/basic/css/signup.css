@@ -24,3 +24,14 @@ h1 {
 .signup-form .buttons {
   margin-block: 30px;
 }
+
+/***** ROLE SIGNUP *****/
+.role-signup {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.role-signup label {
+  display: flex;
+  gap: 10px;
+}

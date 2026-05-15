@@ -1,4 +1,4 @@
-import Navbar from "../components/general/Navbar";
+import Navbar from "../../components/general/Navbar";
 import "./css/contact.css";
 
 const Contact = () => {

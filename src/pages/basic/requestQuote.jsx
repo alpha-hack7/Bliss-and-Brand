@@ -1,5 +1,5 @@
 import "./css/request-quote.css";
-import { BackArrow } from "../components/general/Navbar";
+import { BackArrow } from "../../components/general/Navbar";
 
 const RequestQuote = () => {
   return (

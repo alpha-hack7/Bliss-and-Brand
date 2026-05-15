@@ -1,7 +1,7 @@
 import { NavLink, useNavigate } from "react-router";
 import { useState } from "react";
 import Logo from "../../assets/general/logo.png";
-import { FiMenu, FiX, FiArrowLeftCircle } from "react-icons/fi";
+import { FiMenu, FiX, FiBell, FiUser, FiArrowLeftCircle } from "react-icons/fi";
 import "./css/navbar.css";
 
 export const BackArrow = () => {
@@ -10,6 +10,21 @@ export const BackArrow = () => {
     <button className="back-arrow" onClick={() => navigate("/")}>
       <FiArrowLeftCircle size={25} />
     </button>
+  );
+};
+
+export const D_Navbar = ({ number }) => {
+  const num_notifications = number;
+  return (
+    <div className="dash-nav">
+      <div className="notifications">
+        <FiBell color="white" size={30} />
+        <div className="num">{num_notifications}</div>
+      </div>
+      <div className="profile">
+        <FiUser color="white" size={30} />
+      </div>
+    </div>
   );
 };
 const Navbar = () => {

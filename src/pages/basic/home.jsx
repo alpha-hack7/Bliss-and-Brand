@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import Navbar from "../components/general/Navbar";
-import Categories from "../components/home/categories";
-import HowItWorks from "../components/home/HowitWorks";
+import Navbar from "../../components/general/Navbar";
+import Categories from "../../components/home/categories";
+import HowItWorks from "../../components/home/HowitWorks";
 import "./css/home.css";
 import { useNavigate } from "react-router";
 

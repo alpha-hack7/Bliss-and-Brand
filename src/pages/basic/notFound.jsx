@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import Navbar from "../components/general/Navbar";
+import Navbar from "../../components/general/Navbar";
 import "./css/notfound.css";
 
 const NotFound = () => {
