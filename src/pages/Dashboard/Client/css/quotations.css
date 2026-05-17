@@ -1,0 +1,12 @@
+.quote table {
+  border-collapse: collapse;
+}
+.quote table th {
+  padding-inline: 10px;
+}
+.quote table td {
+  padding-inline: 5px;
+}
+.quote table caption {
+  margin-bottom: 5px;
+}

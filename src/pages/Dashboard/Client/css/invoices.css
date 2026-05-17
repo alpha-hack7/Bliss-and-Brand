@@ -1,0 +1,12 @@
+.invoice table {
+  border-collapse: collapse;
+}
+.invoice table th {
+  padding-inline: 10px;
+}
+.invoice table td {
+  padding-inline: 5px;
+}
+.invoice table caption {
+  margin-bottom: 5px;
+}

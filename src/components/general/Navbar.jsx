@@ -31,39 +31,44 @@ export const D_Navbar = ({ number, notification_link, profile_link }) => {
     </div>
   );
 };
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const openSidebar = () => {
     setOpen(!open);
   };
+
+  const navigation = (
+    <>
+      <li>
+        <NavLink to="/" end>
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/about">About</NavLink>
+      </li>
+      <li>
+        <NavLink to="/industries">Industries</NavLink>
+      </li>
+      <li>
+        <NavLink to="/contact">Contact Us</NavLink>
+      </li>
+      <li className="login">
+        <NavLink to="/login">Login</NavLink>
+      </li>
+      <li className="signup">
+        <NavLink to="/signup">Sign Up</NavLink>
+      </li>
+    </>
+  );
   return (
     <nav>
       <div>
         <img src={Logo} alt="logo" height={40} width={70} />
       </div>
-      <div className="lap-nav">
-        <ul className={open ? "open" : "closed"}>
-          <li>
-            <NavLink to="/" end>
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/industries">Industries</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact Us</NavLink>
-          </li>
-          <li>
-            <NavLink to="/login">Login</NavLink>
-          </li>
-          <li>
-            <NavLink to="/signup">Sign Up</NavLink>
-          </li>
-        </ul>
+      <div className="mobile-nav">
+        <ul className={open ? "open" : "closed"}>{navigation}</ul>
       </div>
       <button className="menu-button" onClick={openSidebar}>
         {open ? (
@@ -72,6 +77,9 @@ const Navbar = () => {
           <FiMenu size={20} color="black" />
         )}
       </button>
+      <div className="lap-nav">
+        <ul>{navigation}</ul>
+      </div>
     </nav>
   );
 };

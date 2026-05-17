@@ -1,5 +1,6 @@
 .sector-info {
   display: flex;
+  /* justify-content: space-between; */
   gap: 20px;
 }
 .sector-image img,
@@ -15,4 +16,5 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  /* background-color: rebeccapurple; */
 }

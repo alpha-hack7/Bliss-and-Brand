@@ -19,37 +19,37 @@ export const Sidebar = () => {
       id: 1,
       title: "Dashboard",
       link: "/dashboard/client",
-      icon: <FiGrid />,
+      icon: <FiGrid color="white" />,
     },
     {
       id: 2,
       title: "Quotations",
       link: "/dashboard/client/quotations",
-      icon: <FiFileText />,
+      icon: <FiFileText color="white" />,
     },
     {
       id: 3,
       title: "Invoices",
       link: "/dashboard/client/invoices",
-      icon: <FiCreditCard />,
+      icon: <FiCreditCard color="white" />,
     },
     {
       id: 4,
       title: "Orders",
       link: "/dashboard/client/orders",
-      icon: <FiShoppingBag />,
+      icon: <FiShoppingBag color="white" />,
     },
     {
       id: 5,
       title: "Settings",
       link: "/dashboard/client/settings",
-      icon: <FiSettings />,
+      icon: <FiSettings color="white" />,
     },
     {
       id: 6,
       title: "Logout",
       link: "/",
-      icon: <FiLogOut />,
+      icon: <FiLogOut color="white" />,
     },
   ];
   const fullNav = (

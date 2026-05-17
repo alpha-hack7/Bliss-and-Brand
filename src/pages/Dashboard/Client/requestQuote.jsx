@@ -1,10 +1,8 @@
 import "./css/request-quote.css";
-import { BackArrow } from "../../components/general/Navbar";
 
 const RequestQuote = () => {
   return (
     <div className="request-quote">
-      <BackArrow />
       <h1>Request Quote</h1>
       <form action="">
         <div className="request-info">

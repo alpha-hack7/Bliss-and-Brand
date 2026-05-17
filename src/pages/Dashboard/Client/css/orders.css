@@ -1,0 +1,12 @@
+.orders table {
+  border-collapse: collapse;
+}
+.orders table th {
+  padding-inline: 10px;
+}
+.orders table td {
+  padding-inline: 5px;
+}
+.orders table caption {
+  margin-bottom: 5px;
+}

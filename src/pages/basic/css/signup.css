@@ -1,4 +1,5 @@
 .signup {
+  outline-width: 0;
   overflow-y: hidden;
 }
 h1 {
@@ -6,6 +7,7 @@ h1 {
 }
 .signup-form {
   width: 70%;
+  max-width: 500px;
   margin: 50px auto 0;
 }
 .signup-form input {

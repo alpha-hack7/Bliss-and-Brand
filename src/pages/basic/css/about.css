@@ -16,6 +16,7 @@
   margin: 0 auto;
   background-color: #fff;
 }
+
 section {
   margin-block: 20px;
 }
@@ -38,4 +39,14 @@ section {
 .what-our-company-offers ul {
   list-style-type: circle;
   padding-left: 30px;
+}
+@media (width > 700px) {
+  .missions-container {
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .missions-container div {
+    width: 30%;
+  }
 }

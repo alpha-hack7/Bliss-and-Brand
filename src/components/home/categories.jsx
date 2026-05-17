@@ -4,6 +4,7 @@ import FashionImage from "../../assets/home/categories/Fashion.png";
 import BeautyImage from "../../assets/home/categories/Beauty.png";
 import ElectronicsImage from "../../assets/home/categories/Electronics.png";
 import SportsImage from "../../assets/home/categories/Sports.png";
+import { FiChevronRight } from "react-icons/fi";
 
 const AllCategories = () => {
   const categories = [
@@ -40,6 +41,9 @@ const AllCategories = () => {
           <Category key={category.id} {...category} />
         ))}
       </div>
+      <button className="cat-button">
+        <FiChevronRight size={25} />
+      </button>
     </div>
   );
 };
@@ -57,9 +61,9 @@ const Categories = () => {
   return (
     <div className="categories">
       <h2>Categories</h2>
-      <div>
-        <AllCategories />
-      </div>
+
+      <AllCategories />
+
       <div className="right-arrow"></div>
     </div>
   );

@@ -7,6 +7,7 @@
   margin-top: 10px;
 }
 .categories-container {
+  position: relative;
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -17,8 +18,9 @@
   position: relative;
 }
 
-.category:hover .cat-image img {
-  scale: 1.05;
+.category:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 5px 5px grey;
 }
 .cat-image img {
   border-radius: 10px;
@@ -31,4 +33,28 @@
   color: #000;
   padding-inline: 4px;
   border-radius: 5px;
+}
+.cat-button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding-inline: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  transform: translateY(-50%);
+  display: none;
+}
+
+@media (width < 700px) {
+  .cat-button {
+    display: none;
+  }
+}
+@media (width > 700px) {
+  .all-categories {
+    margin-left: 40px;
+  }
+  .cat-button {
+    display: block;
+  }
 }

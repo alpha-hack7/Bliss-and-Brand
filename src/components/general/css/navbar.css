@@ -15,6 +15,7 @@ nav div ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+
   gap: 30px;
   /* background-color: rebeccapurple; */
 }
@@ -33,7 +34,7 @@ nav a:visited {
   outline: 0;
   border: 0;
 }
-.lap-nav {
+.mobile-nav {
   position: fixed;
   top: 50px;
   right: 10px;
@@ -54,6 +55,39 @@ nav a:visited {
 }
 .closed {
   display: none;
+}
+/* Laptop navigation */
+.lap-nav {
+  display: none;
+}
+
+@media (width > 700px) {
+  .menu-button,
+  .mobile-nav {
+    display: none;
+  }
+  .lap-nav {
+    display: flex;
+  }
+  .lap-nav ul {
+    align-items: center;
+  }
+  .signup,
+  .login {
+    border-radius: 10px;
+    padding: 4px 16px;
+  }
+  .signup {
+    border: 2px solid black;
+  }
+  .login {
+    background-color: rebeccapurple;
+    border: 2px solid rebeccapurple;
+  }
+}
+
+.active {
+  font-weight: 600;
 }
 
 /***** ARROWS *****/

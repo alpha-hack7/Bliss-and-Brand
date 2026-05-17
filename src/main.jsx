@@ -11,7 +11,7 @@ import NotFound from "./pages/basic/notFound";
 import Login from "./pages/basic/login";
 import Signup from "./pages/basic/signup";
 
-import RequestQuote from "./pages/basic/requestQuote";
+import RequestQuote from "./pages/Dashboard/Client/requestQuote";
 
 import ClientDashboard from "./pages/Dashboard/Client/clientDashboard";
 import SupplierDashboard from "./pages/Dashboard/Supplier/supplierDashboard";
@@ -52,10 +52,7 @@ const router = createBrowserRouter([
     path: "/signup",
     element: <Signup />,
   },
-  {
-    path: "/request-quote",
-    element: <RequestQuote />,
-  },
+
   {
     path: "/dashboard/client",
     element: <ClientDashboard />,
@@ -79,6 +76,10 @@ const router = createBrowserRouter([
       {
         path: "settings",
         element: <Settings />,
+      },
+      {
+        path: "request-quote",
+        element: <RequestQuote />,
       },
       {
         path: "notifications",

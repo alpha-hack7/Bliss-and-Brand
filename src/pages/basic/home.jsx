@@ -111,9 +111,7 @@ const Slideshow = () => {
                 purchasing decisions today.
               </p>
               <div className="slide5-buttons">
-                <button onClick={() => navigate("/request-quote")}>
-                  Request a quote
-                </button>
+                <button>Something else</button>
                 <button onClick={() => navigate("/signup")}>Get Started</button>
               </div>
             </div>
@@ -208,9 +206,7 @@ const CTA = () => {
       <p>
         <i>Reliable Procurement. Seamless Supply. Trusted Delivery</i>
       </p>
-      <button onClick={() => navigate("/request-quote")}>
-        Request a quote
-      </button>
+      <button onClick={() => navigate("/signup")}>Get Started</button>
     </section>
   );
 };
